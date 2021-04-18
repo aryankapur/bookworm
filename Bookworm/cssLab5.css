@@ -1,0 +1,108 @@
+/*CSS FILE FOR LAB 5*/
+@charset "utf-8";
+html{background-color: rgb(58, 223, 195);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+/*For Tablet*/
+
+
+
+/*For Desktop Styles*/
+@media (max-width:1440px){
+    
+
+header
+{   display: flex;
+    height: 100px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: whitesmoke;
+}
+nav>div{
+    display: flex;
+    min-height: 40px;
+   margin: 10px;
+   padding: 3px;
+   width: 100%;
+   justify-content: space-evenly;
+}
+article{
+    float: left;
+    background-color: rosybrown;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    align-items: center;
+    width: 80%;
+    
+}
+article>div{
+    font-size: x-large;
+    background-color: seagreen;
+    border: 8px;
+    border-style: dotted;
+    padding-right: 20mm;
+    display: flex;
+
+    border-style:dotted;
+  
+    JUSTIFY-CONTENT: SPACE-EVENLY;
+}
+aside
+{   background-color: violet;
+    /* display: flex; */
+    justify-content: center;
+    float: right;
+    min-width: 20%;  
+    height: 130px;  
+}
+
+footer{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+}
+}
+
+
+@media(max-width:769px){
+    nav{
+       flex-direction: column; 
+    }
+    
+    #item1{
+       flex-grow: 1; 
+       justify-content: space-evenly;
+    }
+    article>div {
+        JUSTIFY-CONTENT: unset;
+    }
+    article div:nth-child(3){
+        flex: 100%;
+    }
+}
+
+
+/*Mobile View*/
+@media(max-width:480px){
+    nav{
+       flex-direction: column; 
+    }
+    #item1{
+        flex-grow: 0; 
+        justify-content: space-evenly;
+     }
+    aside{display: none;}
+
+    article{
+        width: 100%;
+    }
+    
+}
